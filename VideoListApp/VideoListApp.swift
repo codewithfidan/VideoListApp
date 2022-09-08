@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct VideoListAppApp: App {
+struct VideoListApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VideoListView().environmentObject(ContentModel())
         }
     }
 }
